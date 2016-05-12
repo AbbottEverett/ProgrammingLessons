@@ -1,0 +1,67 @@
+/*******************************************************
+	over-arching rules across the whole page
+********************************************************/
+
+body {
+	background-color: #e0fbff;
+}
+.centered-text {
+	text-align: center;
+	
+}
+.left {
+	margin: 16px 0px;
+}
+
+/*******************************************************
+	Style all of the headings for the page
+********************************************************/
+
+h1, h2 {
+	text-align: center;
+	margin: 16px 0px;
+	padding: 8px 0px;
+	color: #296972;
+	border-bottom: 6px solid #296972;
+	border-right: 6px solid #296972;
+	font-family: Helvetica, san-serif;
+}
+h1 {
+	font-size: 3em;
+	background-color: #a5f4ff;
+}
+
+h2 {
+	font-size: 2em;
+	background-color: #78dded;
+	
+}
+
+
+/*******************************************************
+	Style all of the content for the page
+********************************************************/
+
+p, address, blockquote, pre {
+	text-align: justify;
+	color: black;
+	padding: 4px 8px;
+	margin: 0px 0px 8px 0px;
+	font-family: 'Droid Serif', serif;
+}
+
+address, blockquote, pre {
+	padding: 4px 32px;
+	background-color: #ccf9ff;
+	border: 2px inset;
+}
+
+
+img {
+	border: 1px solid black;
+	border-radius: 20px;
+	margin: auto;
+	display: block;
+	width: 300px;
+	height: 225px;
+}
