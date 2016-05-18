@@ -1,0 +1,97 @@
+/********************************
+	Header Styles!
+ *********************************/
+
+h1, h2, h3 {
+	color: white;
+	font-family: Courier;
+}
+
+h1 {
+	padding-left: 20px;
+	padding-top: 10px;
+	margin: 0px;
+}
+
+h2 {
+	margin: auto;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	color: blue;
+	border-bottom: 1px solid black;
+	text-align: center;
+}
+
+h3 {
+	text-align: right;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	margin: 0px;
+}
+
+#header {
+	background-color: blue;
+	border: 1px solid black;
+}
+
+/********************************
+	Body Styles!
+ *********************************/
+ 
+p {
+	text-align: justify;
+}
+
+#textBody {
+	margin: auto;
+	padding: 0px 60px;
+}
+
+/********************************
+	Table Styles!
+ *********************************/
+
+table, th, td {
+    border: 1px solid black;
+	border-collapse: collapse;
+	margin: auto;
+}
+
+table {
+	margin-top: 16px;
+	width: 90%;
+}
+
+td {
+	padding: 8px;
+}
+
+.tHeader {
+	background-color: gray;
+	font-weight: 900;
+	color: white;
+	font-size: 150%;
+}
+
+.month {
+	background-color: #CCC;
+}
+
+.quarter {
+	background-color: #999;
+	color: white;
+	font-weight: 700;
+}
+
+.year {
+	background-color: #666;
+	color: white;
+	font-weight: 900;
+}
+
+.negative {
+	color: red;
+}
+
+
+
