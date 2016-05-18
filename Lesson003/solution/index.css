@@ -9,9 +9,6 @@ body {
 	text-align: center;
 	
 }
-.left {
-	margin: 16px 0px;
-}
 
 /*******************************************************
 	Style all of the headings for the page
@@ -25,7 +22,9 @@ h1, h2 {
 	border-bottom: 6px solid #296972;
 	border-right: 6px solid #296972;
 	font-family: Helvetica, san-serif;
+	
 }
+
 h1 {
 	font-size: 3em;
 	background-color: #a5f4ff;
@@ -64,4 +63,9 @@ img {
 	display: block;
 	width: 300px;
 	height: 225px;
+}
+
+/* put the cat image back on the left side of the screen */
+#lol-cat-image {
+	margin: 16px 0px;
 }
