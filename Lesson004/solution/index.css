@@ -1,3 +1,11 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
 /********************************
 	Header Styles!
  *********************************/
@@ -33,10 +41,28 @@ h3 {
 #header {
 	background-color: blue;
 	border: 1px solid black;
+	
+	position:fixed;
+	z-index:1;
+	left: 5px;
+	right: 5px;
+}
+/********************************
+	Body styles
+ *********************************/
+body {
+	margin:0px;
+}
+
+#mainContent {
+	margin:0px 5px;
+	overflow-y:auto;
+	position: relative;
+    top: 100px
 }
 
 /********************************
-	Body Styles!
+	Body Content Styles!
  *********************************/
  
 p {
@@ -98,6 +124,11 @@ th {
 	font-weight: 900;
 	color: white;
 	font-size: 36px;
+}
+
+th span {
+	position:relative;
+	bottom:2px;
 }
 
 tr.month td {
