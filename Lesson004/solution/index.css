@@ -15,9 +15,8 @@ h1 {
 }
 
 h2 {
-	margin: auto;
-	padding-top: 15px;
-	padding-bottom: 5px;
+	margin:10px 0px 0px 0px;
+	padding: 5px 0px;
 	color: blue;
 	border-bottom: 1px solid black;
 	text-align: center;
@@ -42,11 +41,12 @@ h3 {
  
 p {
 	text-align: justify;
+	margin:0px 0px 16px 0px;
 }
 
-#textBody {
+.sectionContent {
 	margin: auto;
-	padding: 0px 60px;
+	padding: 10px 64px 0px 64px;
 }
 
 li {
@@ -59,13 +59,13 @@ li {
 	text-shadow: 2px 2px 4px #000;
 }
 
-.orderList {
+ul.orderList li div{
 	border-bottom: 1px solid black;
 	margin: 16px 0px;
 }
 
-.orderSubList{
-	margin: 16px 48px;
+ul.orderSubList li div{
+	margin: 16px 0px 16px 48px;
 	border-bottom: 1px solid black;
 }
 
@@ -83,37 +83,35 @@ img {
 table, th, td {
     border: 1px solid black;
 	border-collapse: collapse;
-	margin: auto;
 }
 
 table {
-	margin-top: 16px;
-	width: 90%;
+	width:100%;
 }
 
 td {
 	padding: 8px;
 }
 
-.tHeader {
+th {
 	background-color: gray;
 	font-weight: 900;
 	color: white;
-	font-size: 150%;
+	font-size: 36px;
 }
 
-.month {
-	background-color: #CCC;
+tr.month td {
+	background-color: #CCC;	
 }
 
-.quarter {
+tr.quarter td {
 	background-color: #999;
 	color: white;
 	font-weight: 700;
 	text-decoration: underline;
 }
 
-.year {
+tr.year td{
 	background-color: #666;
 	color: white;
 	font-weight: 900;
@@ -129,5 +127,14 @@ td {
 	color: red;
 }
 
+
+/********************************
+ List Styles (Leader Bios)
+ *********************************/
+ ul {
+	 padding:0px;
+ }
+ 
+ 
 
 
