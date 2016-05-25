@@ -12,20 +12,11 @@ body {
 }
 
 .contentSpace {
+	position: absolute;
+	top: 16px;
+	left: 16px;
 	background-color: #c6d6ec;
 	border-radius: 12px;
-	margin: 12px;	
-	overflow-y: auto;
-}
-
-#mainContent {
-	background-color: #073763;
-	position: fixed;
-	top: 72px;
-	left: 176px;
-	height: 100%;
-	width: 100%;
-	margin: 0px 0px 0px 0px;
 }
 
 /**************************
@@ -59,28 +50,29 @@ body {
 	position: fixed;
 	top: 72px;
 	height: 100%;
-	width: 176px;
+	width: 196px;
 	margin: 0px 0px 0px 0px;
+	overflow-y: auto;
 }	
 
-.iconStyle{
+.iconStyle {
+	margin-bottom: 8px;
+	padding: 16px;
+	border-radius: 16px;
 	background-color: #073763;
 	color: #ffffff;
-	width: 112px;
-	height: 112px;
-	padding: 16px;
-	border-radius: 12px;
 }
 
 .iconText {
 	font-size: 1.25em;
 	font-weight: 700;
 	font-family: 'Roboto Slab', serif;
+	color: #073763;
 }
 
 ul {
 	padding: 0px;
-	margin: 16px 24px 16px 24px;
+	margin: 16px;
 }
 
 li {
@@ -92,3 +84,14 @@ li {
 /**************************
 	Content Styles
 **************************/
+
+#mainContent {
+	background-color: #073763;
+	position: fixed;
+	top: 72px;
+	left: 196px;
+	height: 100%;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	overflow-y: auto;
+}
