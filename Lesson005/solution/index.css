@@ -7,16 +7,26 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
 body {
 	margin: 0px;
 }
 
-.contentSpace {
+.sidebarContent, .contentContainer {
 	position: absolute;
 	top: 16px;
 	left: 16px;
+	right: 16px;
+	bottom: 16px;
 	background-color: #c6d6ec;
 	border-radius: 12px;
+	overflow-y: auto;
+	padding:16px;
+}
+
+.contentSpace {
+	padding:8px;
+	background-color: #eee;
 }
 
 /**************************
@@ -49,10 +59,10 @@ body {
 	background-color: #073763;
 	position: fixed;
 	top: 72px;
-	height: 100%;
+	bottom:0px;
 	width: 196px;
 	margin: 0px 0px 0px 0px;
-	overflow-y: auto;
+	
 }	
 
 .iconStyle {
@@ -72,7 +82,7 @@ body {
 
 ul {
 	padding: 0px;
-	margin: 16px;
+	margin: 0px;
 }
 
 li {
@@ -90,8 +100,8 @@ li {
 	position: fixed;
 	top: 72px;
 	left: 196px;
-	height: 100%;
-	width: 100%;
+	bottom: 0px;
+	right:0px;
 	margin: 0px 0px 0px 0px;
 	overflow-y: auto;
 }
