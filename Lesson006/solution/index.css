@@ -1,0 +1,147 @@
+/**** index.css ****/
+
+/**************************
+	Text Styles
+**************************/
+
+h1, h2, h3 {
+	color: white;
+	font-family: Pokemon;
+	margin: 0px;
+}
+
+h1 {
+	margin-left: 148px;
+	margin-top: 28px;
+}
+
+h3 {
+	font-family: Pikachu;
+	font-size: 4em;
+}
+
+/**************************
+	Title Bar Styles
+**************************/
+
+#titleBar {
+	height: 128px;
+	margin: 32px;
+	background-color: #C22E28;
+	border: 4px double;
+}
+
+img#pokeballLeft {
+	height: 112px;
+	width: 112px;
+	margin-left: 8px;
+	margin-top: 4px;
+	float: left;
+}
+
+
+/**************************
+	Pokemon Card Styles
+**************************/
+
+#allCards {
+	margin-left: 32px;
+}
+
+.pokeCard {
+	width: 272px;
+	height: 288px;
+	display: inline-block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 16px;
+	margin-right: 16px;
+	margin-bottom: 16px;
+}
+
+.pokeTitle {
+	padding:8px;
+	padding-left: 16px;
+}
+
+img.pokemon {
+	width: 192px;
+	display: block;
+	margin: auto;
+	margin-top:16px;
+}
+
+/**************************
+	Pokemon Color Styles
+**************************/
+
+#normal {
+	background-color:#A8A77A;
+}
+
+#fire {
+	background-color:#EE8130;
+}
+
+#water {
+	background-color:#6390F0;
+}
+
+#electric {
+	background-color:#F7D02C;
+}
+
+#grass {
+	background-color:#7AC74C;
+}
+
+#ice {
+	background-color:#96D9D6;
+}
+
+#fighting {
+	background-color:#C22E28;
+}
+
+#poison {
+	background-color:#A33EA1;
+}
+
+#ground {
+	background-color:#E2BF65;
+}
+
+#flying {
+	background-color:#A98FF3;
+}
+
+#psychic {
+	background-color:#F95587;
+}
+
+#bug {
+	background-color:#A6B91A;
+}
+
+#rock {
+	background-color:#B6A136;
+}
+
+#ghost {
+	background-color:#735797;
+}
+
+#dragon {
+	background-color:#6F35FC;
+}
+
+#dark {
+	background-color:#705746;
+}
+
+#steel {
+	background-color:#B7B7CE;
+}
+
+#fairy {
+	background-color:#D685AD;
+}

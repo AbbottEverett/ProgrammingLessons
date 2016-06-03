@@ -1,0 +1,30 @@
+/**** navigation.css ****/
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	border: 2px solid black;
+	padding: 24px 6px 24px 6px;
+	margin-bottom: 16px;
+	list-style-type: none;
+	font-family: Pokemon;
+	text-align: center;
+	height: 96px;
+	background-color: #B7B7CE;
+	color: #fff;
+}
+
+#lastItem {
+	margin: 0px;
+}
+
+.active {
+	background-color: #6390F0;
+}
+
+li:hover {
+	background-color: #A33EA1;
+}
