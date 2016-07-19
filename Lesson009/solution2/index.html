@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tic Tac Toe - The Game</title>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="./bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./bootstrap-3.3.6-dist/css/bootstrap-theme.min.css" />
+	<link href="./index.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<!-- Game UI -->
+	<div class="row" id="header">
+		<div class="col-xs-3 col-md-2" id="resetGame">
+			<h4>Reset Game</h4>
+		</div>
+		<div class="col-xs-3 col-md-2" id="resetScore">
+			<h4>Reset Score</h4>
+		</div>
+		<div class="col-xs-3 col-md-2" id="pScoreBox">
+			<h4>Player: <span>0</span></h4>
+		</div>
+		<div class="col-xs-3 col-lg-2" id="cScoreBox">
+			<h4>Computer: <span>0</span></h4>
+		</div>
+	</div>
+	
+	<div class="container-fluid bg-fix">
+	
+	<!-- Game Board -->
+		<div class="row">
+			<div class="col-xs-4 col-md-3 col-lg-3">
+				<div class="col-sm-offset-2 col-md-offset-1 tile ">
+					<i class="fa fa-circle-o "></i>
+				</div>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-3">
+				<div class="col-sm-offset-2 col-md-offset-1 tile ">
+					<i class="fa fa-times "></i>
+				</div>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-3">
+				<div class="col-sm-offset-2 col-md-offset-1 tile ">
+					<i class="fa fa-circle-o "></i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-4 col-md-3 col-lg-3">
+				<div class="col-sm-offset-2 col-md-offset-1 tile ">
+					<i class="fa fa-circle-o "></i>
+				</div>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-3">
+				<div class="col-sm-offset-2 col-md-offset-1 tile ">
+					<i class="fa fa-circle-o "></i>
+				</div>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-3">
+				<div class="col-sm-offset-2 col-md-offset-1 tile ">
+					<i class="fa fa-circle-o "></i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-4 col-md-3 col-lg-3">
+				<div class="col-sm-offset-2 col-md-offset-1 tile ">
+					<i class="fa fa-circle-o "></i>
+				</div>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-3">
+				<div class="col-sm-offset-2 col-md-offset-1 tile ">
+					<i class="fa fa-circle-o "></i>
+				</div>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-3">
+				<div class="col-sm-offset-2 col-md-offset-1 tile ">
+					<i class="fa fa-circle-o "></i>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!-- index.js, jQuery & Bootstrap Javascript Files -->
+	<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
