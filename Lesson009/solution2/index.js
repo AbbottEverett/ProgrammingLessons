@@ -29,16 +29,16 @@ function Tile (id, domElement) {
 		switch(tile.state) {
 		case TileState.clear:
 			icon.className = "fa";
-			//$('div.tile').removeClass('x-color');
-			//$('div.tile').removeClass('o-color');
+			$(domElement).removeClass('x-color');
+			$(domElement).removeClass('o-color');
 			break;
 		case TileState.x:
 			icon.className = "fa fa-times";
-			//$('div.tile').addClass('x-color');
+			$(domElement).addClass('x-color');
 			break;
 		case TileState.o:
 			icon.className = "fa fa-circle-o";
-			//$('div.tile').addClass('o-color');
+			$(domElement).addClass('o-color');
 			break;
 		}
 	};
@@ -151,6 +151,16 @@ function GameBoard () {
 		};
 	};
 	
+	gameBoard.isPlayable = function(){
+		var t;
+		for (t in gameBoard.allTiles) {
+			if (gameBoard.allTiles[t].state === TileState.clear) {
+				return true;
+			}
+		}
+		return false;
+	};
+	
 	gameBoard.allTiles = [];
 	
 }
@@ -163,18 +173,31 @@ function ScoreBoard() {
 	var humanScore = 0;
 	var compScore = 0;
 	
+	var updateScoreboard = function(){
+		$('#pScoreBox h4 span').text(humanScore);
+		$('#cScoreBox h4 span').text(compScore);
+	};
 	
+	
+	// resets the scoreboard all back to zero.
 	scoreBoard.resetBoard = function() {
-		// click button, sets scores back to zero
+		humanScore = 0;
+		compScore = 0;
+		updateScoreboard();
 	};
 	
 	scoreBoard.incrementHuman = function() {
 		humanScore += 1;
+		updateScoreboard();
 	};
-	
+		
 	scoreBoard.incrementComp = function() {
 		compScore += 1;
+		updateScoreboard();
 	};
+	
+	
+	
 }
 
 function ResetButton(scoreBoard, gameBoard) {
@@ -190,6 +213,7 @@ function Game() {
 	game.sB = new ScoreBoard;
 	game.rB = new ResetButton;
 	game.comp = new Computer;
+	game.box = new DialogBox;
 	
 	game.init = function() {
 		game.gB.init();
@@ -197,14 +221,25 @@ function Game() {
 
 	// checkWin method - checks if human or comp player won, reset board and update score	
 	game.checkWin = function() {
+		
 		var winner = game.gB.checkWinner();
+		debugger;
+		
 		if (winner.tileState == "x") {
+			game.box.showHumanWinner();
 			game.sB.incrementHuman();
 			game.gB.reset();
+			
 		} else if (winner.tileState == "o") {
+			game.box.showComputerWinner();
 			game.sB.incrementComp();
 			game.gB.reset();
-		} 
+		} else if (winner.tileState == "clear" && !game.gB.isPlayable()) {
+			// game is tied if there is no winner, and the gameboard is not playable
+			game.box.showTie();
+			game.gB.reset();
+		}
+		
 	};
 	
 }
@@ -246,6 +281,41 @@ function Computer() {
 	
 }
 
+function DialogBox() {
+	var box = this;
+	var domElement = $('#modalContainer .modal');
+	var modalTitle = domElement.find('h4.modal-title');
+	var bodyText = domElement.find('.modal-body p');
+		
+	var show = function() {
+		domElement.modal('show');
+		
+	};
+		
+	box.showHumanWinner = function() {
+		modalTitle.text('You win!');
+		show();
+	};
+	
+	box.showComputerWinner = function(){
+		modalTitle.text('Computer player wins!');
+		show();
+	};
+	
+	box.showTie = function() {
+		modalTitle.text('No one wins!');
+		show();
+	};
+	
+	box.close = function(){
+		domElement.modal('hide');
+	};
+	
+}
+
 var game = new Game();
 
-game.init();
+$(document).ready(function(){
+	game.init();	
+});
+
